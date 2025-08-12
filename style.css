@@ -1,0 +1,842 @@
+html {
+     font-family: Roboto, sans-serif;
+     font-size: 16px;
+     line-height: 1.6;
+     -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+     color: #212121;
+     scroll-behavior: smooth;
+}
+ html, body {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ body {
+     font-family: Roboto, sans-serif;
+     font-size: 16px;
+     background: url("https://blogger.googleusercontent.com/img/a/AVvXsEhZMNOL6wp5jptTTRb56EeAO6gVJUMmdQbCSPDJSE-COdxnRQtjXLquWZtWuW6sXe6-Qfr8mcWoUaTuUt93yIB6HQBdlZzpIFVA8QPPp1W_2XS4Vy3Ymc6SWAdgKM0Ul44g-jZBRovATQMcAbH52Yy4GxDW8epxPer0g_9x5684f2oVnXhYJoQO7Y-_rM0P=s16000") center/cover fixed no-repeat;
+     color: #444;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+}
+ .overlay {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     background-color: rgba(255, 255, 255, 0.9);
+}
+ img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+}
+/* Navigation Container */
+/* Navigation Container */
+ nav {
+     display: flex;
+     justify-content: center;
+    /* Centers the navigation menu horizontally */
+     background-color: #fff;
+    /* Optional: sets background color */
+     padding: 10px 0;
+    /* Optional: adds vertical padding */
+}
+/* Navigation Menu */
+ .nav-menu {
+     display: flex;
+     justify-content: center;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+/* Navigation Items */
+ .nav-menu li {
+     margin: 0 15px;
+}
+/* Navigation Links */
+ .nav-menu li a {
+     text-decoration: none;
+     color: #333;
+     font-weight: bold;
+     font-size: 1rem;
+     transition: color 0.3s;
+}
+ .nav-menu li a:hover {
+     color: #1e88e5;
+}
+ h1, h2, h3, h4, h5, h6 {
+     margin: 0 0 1rem;
+     font-weight: 700;
+     line-height: 1.2;
+     color: #212121;
+}
+ h1 {
+     font-size: 2.25rem;
+}
+ h2 {
+     font-size: 1.75rem;
+}
+ h3 {
+     font-size: 1.5rem;
+}
+ a {
+     color: #1e88e5;
+     text-decoration: none;
+}
+ a:hover {
+     text-decoration: underline;
+}
+ .container {
+     width: 90%;
+     max-width: 1200px;
+     margin: 2rem auto;
+     padding: 1rem;
+     background-color: rgba(255, 255, 255, 0.85);
+     border-radius: 5px;
+}
+.container-index {
+      width: 90%;
+      margin: 2rem auto;
+      padding: 1rem;
+      border-radius: 5px;
+      flex: 1;
+}
+    }
+.container ul {
+      list-style: none;
+      padding: 0;
+    }
+
+.container-index  ul {
+      list-style: none;
+      padding: 0;
+    }
+
+.container ul li {
+      margin-bottom: 0.5rem;
+    }
+.container-index ul li {
+      margin-bottom: 0.5rem;
+    }
+
+.container ul li a {
+      color: #1e88e5;
+      text-decoration: none;
+    }
+.container-index ul li a {
+      color: #1e88e5;
+      text-decoration: none;
+    }
+
+.container ul li a:hover {
+      text-decoration: underline;
+    }
+.container-index ul li a:hover {
+      text-decoration: underline;
+    }
+
+/* Form Container */
+.container form {
+  margin-top: 1rem;
+}
+.container-index form {
+  margin-top: 1rem;
+}
+/* Genre Add Input & Button */
+ .container input[type="text"] {
+     padding: 10px;
+     width: 60%;
+     max-width: 300px;
+     margin-right: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+}
+ .container button {
+     padding: 10px 20px;
+     background-color: #1e88e5;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     font-weight: bold;
+     cursor: pointer;
+}
+
+ .container button:hover {
+     background-color: #1565c0;
+}
+
+
+/* Genre Add Input & Button */
+.container input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  max-width: 300px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.container-index input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  max-width: 300px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container button {
+  padding: 10px 20px;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container-index button {
+  padding: 10px 20px;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #1565c0;
+}
+.container-index button:hover {
+  background-color: #1565c0;
+}
+
+
+/* Make the header transparent and position it over the content */
+ .header {
+     background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent white */
+     padding: 1.5rem 1rem;
+     text-align: center;
+     position: relative;
+     z-index: 1;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+/* Style the navigation links for better visibility */
+ .header a {
+     color: #000000;
+     font-weight: bold;
+     text-decoration: none;
+     padding: 10px 15px;
+     transition: color 0.3s ease;
+}
+ .header a:hover {
+     color: #1e88e5;
+    /* Optional: Change color on hover */
+}
+ .footer {
+     background: #ffffff;
+     border-top: 1px solid #ddd;
+     padding: 1.5rem 1rem;
+     text-align: center;
+     font-size: 0.9rem;
+     color: #777;
+}
+ .sidebar {
+     padding: 1rem;
+     background: #ffffff;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+}
+ .article {
+     background: #ffffff;
+     padding: 2rem;
+     border-radius: 5px;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+     margin-bottom: 2rem;
+}
+ .article-title {
+     font-size: 1.75rem;
+     margin-bottom: 1rem;
+     color: #000;
+}
+ .article-meta {
+     font-size: 0.875rem;
+     color: #888;
+     margin-bottom: 1rem;
+}
+ .article-content {
+     font-size: 1rem;
+     line-height: 1.7;
+}
+ img {
+     max-width: 100%;
+     height: auto;
+}
+ ul, ol {
+     padding-left: 2rem;
+     margin-bottom: 1rem;
+}
+ blockquote {
+     margin: 1rem 0;
+     padding: 1rem;
+     background: #f0f0f0;
+     border-left: 5px solid #2196f3;
+     font-style: italic;
+}
+ pre {
+     background: transparent;
+     overflow: auto;
+     font-size: 0.7rem;
+     border-radius: 4px;
+     max-width: 200px;
+}
+ code {
+     background: #eee;
+     padding: 0.2em 0.4em;
+     border-radius: 3px;
+     font-size: 0.9em;
+}
+/* Responsive */
+ @media (max-width: 768px) {
+     .container {
+         padding: 0.5rem;
+    }
+     .article {
+         padding: 1rem;
+    }
+}
+/* Widgets */
+ .widget-content ul {
+     list-style: none;
+     padding: 0;
+}
+ .widget-content ul li {
+     border-bottom: 1px solid #eee;
+     padding: 0.5rem 0;
+}
+ .BlogArchive ul {
+     list-style: none;
+     padding-left: 1rem;
+}
+ .post {
+     padding: 1rem;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+     background-color: #ffffff;
+     margin-bottom: 1px;
+}
+ .popular-post-title {
+     width: 90%;
+     font-size: 1rem;
+     margin: 2rem auto;
+     background-color: #ffffff;
+     padding: 10px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+ .popular-posts {
+     font-size: 1rem;
+     background-color: #ffffff;
+     margin: 0;
+     padding: 10px;
+ }
+
+ .item-title {
+     font-size: 1rem;
+     margin: 0;
+     background-color: #ffffff;
+     padding: 10px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+ .main-menu {
+     background-color: #ffffff;
+     border-top: 1px solid #ccc;
+     border-bottom: 1px solid #ccc;
+     padding: 10px 0;
+     text-align: center;
+}
+ .main-menu ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+ .main-menu li {
+     display: inline-block;
+     margin: 0 20px;
+}
+ .main-menu a {
+     text-decoration: none;
+     color: #333;
+     font-weight: bold;
+     font-size: 1rem;
+     transition: color 0.3s;
+}
+ .main-menu a:hover {
+     color: #1e88e5;
+}
+
+.latest-posts {
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 1rem;
+}
+
+ .latest-post-index{
+     font-weight: bold;
+     font-size: 1.5rem;
+     background-color:#ffffff;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+     padding: 10px;
+}
+ .latest-posts {
+     list-style: none;
+     padding-left: 0;
+     margin-top: 1rem;
+}
+ .latest-posts li {
+     border-bottom: 1px solid #ddd;
+     padding: 0.5rem 0;
+}
+ .latest-posts li a {
+     color: #1e88e5;
+     text-decoration: none;
+     font-weight: 500;
+}
+ .latest-posts li a:hover {
+     text-decoration: underline;
+}
+ .article {
+     background: #ffffff;
+     padding: 2rem;
+     border-radius: 5px;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+     margin-bottom: 2rem;
+}
+ .article-title {
+     font-size: 2rem;
+     margin-bottom: 1rem;
+     color: #333;
+}
+ .article-content {
+     font-size: 1rem;
+     line-height: 1.7;
+     color: #444;
+}
+ .bg-post {
+     margin: 0px;
+     padding: 5px;
+     width: 225px;
+     height: 319px;
+     background-image: url("https://cdn.myanimelist.net/images/anime/1448/147351.jpg");
+     overflow: visible;
+}
+ .post img {
+     width: 225px;
+     height: 319px;
+     object-fit: cover;
+}
+ .admin-form {
+     display: block;
+     background-color: #ffffff;
+     border-top: 1px solid #ccc;
+     border-bottom: 1px solid #ccc;
+     padding: 10px 0;
+     text-align: center;
+}
+ .admin-form input {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 15px;
+     font-size: 1rem;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+}
+ .button-login button {
+     width: 100%;
+     padding: 10px;
+     background-color: #1e88e5;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     font-weight: bold;
+     cursor: pointer;
+}
+ .button-login button:hover {
+     background-color: #1565c0;
+}
+ .admin-username, .admin-password {
+     margin-bottom: 15px;
+}
+ .admin-username input, .admin-password input {
+     width: 100%;
+     padding: 10px;
+     font-size: 1rem;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+}
+ .admin-username label, .admin-password label {
+     font-weight: bold;
+     display: block;
+     margin-bottom: 5px;
+}
+ .article-body {
+     display: flex;
+     gap: 1.5rem;
+     align-items: flex-start;
+     margin-top: 1rem;
+     flex-wrap: wrap;
+    /* responsive */
+}
+.article-body-flex {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+ .post-footer {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-top: 5px;
+     border-top: 1px solid #ddd;
+     margin-top: 2px;
+}
+ .post-body {
+     display: flex;
+     flex-direction: row;
+     gap: 20px;
+     flex-wrap: wrap;
+}
+ .post-image-index img {
+     width: 225px;
+     height: auto;
+     object-fit: cover;
+     aspect-ratio: 2 / 3;
+}
+ .post-content {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     font-size: 0,7rem;
+}
+ @media screen and (max-width: 600px) {
+     .post-body {
+         flex-direction: column;
+    }
+}
+ .post-score {
+     font-weight: bold;
+     color: #333;
+     font-size: 0.9rem;
+}
+ .post-genre-index {
+     display: flex;
+     gap: 5px;
+     flex-wrap: wrap;
+}
+ .post-genre {
+     display: flex;
+     gap: 8px;
+     flex-wrap: wrap;
+}
+ .post-image-wrap {
+     flex: 0 0 225px;
+     max-width: 100%;
+}
+ .post-image-wrap img {
+     width: 225px;
+     height: 319px;
+     object-fit: cover;
+}
+.post-synopsis-text{
+    font-weight: bold;
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+ .post-text-wrap {
+     flex: 1;
+     min-width: 250px;
+     font-size: 0.7rem;
+     line-height: 1.7;
+     color: #444;
+}
+ .post-text-content {
+     flex: 1;
+     min-width: 250px;
+     font-size: 1rem;
+     line-height: 1.7;
+     color: #444;
+}
+.post-left-column {
+  width: 192px;
+  flex-shrink: 0;
+}
+.post-right-column {
+  flex: 1;
+  min-width: 0;
+}
+
+ @media (max-width: 768px) {
+     .article-body {
+         flex-direction: column;
+    }
+     .post-image-wrap, .post-text-wrap {
+         width: 100%;
+    }
+}
+ select[multiple] {
+     height: 120px;
+     background-color: #f9f9f9;
+}
+ .genre-tag {
+     display: inline-block;
+     background-color: #eee;
+     padding: 6px 12px;
+     margin: 6px 6px 0 0;
+     border-radius: 20px;
+     font-size: 0.9em;
+     text-decoration: none;
+     color: #333;
+     transition: background-color 0.2s ease;
+}
+ .genre-tag:hover {
+     background-color: #ccc;
+}
+/* Genre Badge Style */
+.genre-badge,
+.theme-badge,
+.demo-badge,
+.source-badge,
+.studio-badge,
+.licensor-badge,
+.producer-badge,
+.premiered-badge, 
+.type-badge {
+  text-decoration: none;
+  color: #1C439B; /* 👈 blue color */
+  transition: background-color 0.2s ease;
+}
+
+.genre-badge:hover,
+.theme-badge:hover,
+.demo-badge:hover,
+.source-badge:hover,
+.studio-badge:hover,
+.licensor-bagde:hover,
+.producer-bagde:hover,
+.premiered-bagde:hover,
+.type-bagde:hover {
+  background-color: #ccc;
+}
+.episode-badge, 
+.status-badge,
+.aired-badge,
+.duration-badge,
+.rating-badge,
+.broadcast-badge {
+  text-decoration: none;
+  color: #000000;
+
+}
+ .anime-details {
+     margin-top: 20px;
+     background-color: #fafafa;
+     padding: 15px;
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     max-width: 192px;
+}
+ .anime-details h3 {
+     margin-top: 10px;
+     font-size: 0.7rem;
+}
+ .anime-details ul {
+     list-style: none;
+     font-size: 0.7rem;
+     padding-left: 0;
+}
+ .anime-details li {
+     margin: 5px 0;
+}
+ .alt-titles {
+     font-size: 0.7rem;
+     line-height: 1.4;
+     color: #333;
+     margin-bottom: 5px;
+     padding: 2px;
+     margin-top: 0px;
+}
+ .information-block {
+     font-size: 0.7rem;
+     line-height: 1.4;
+     color: #333;
+     margin-bottom: 5px;
+     padding: 2px;
+     margin-top: 0;
+}
+ .tight-section-title {
+     margin-bottom: 4px;
+}
+.tight-section-hr {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+ .tight-heading {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.collapsible {
+    background-color: #2c3e50;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+
+  .collapsible:hover {
+    background-color: #34495e;
+  }
+
+
+.content {
+  padding: 0; /* remove left/right padding that was squeezing width */
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 100%;
+}
+  .download-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .download-item:last-child {
+    border-bottom: none;
+  }
+
+  .download-link {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+  }
+
+  .download-link:hover {
+    text-decoration: underline;
+  }
+  
+.batch-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  gap: 0.5rem;
+}
+
+.batch-header,
+.batch-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.batch-cell {
+  flex: 1;
+  padding: 4px 10px;
+  box-sizing: border-box;
+}
+
+.batch-cell a {
+  display: inline-block;
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: 500;
+}
+
+.batch-cell.title {
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 5px;
+  color: #2c3e50;
+}
+
+
+.batch-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.batch-table,
+.batch-header,
+.batch-row,
+.batch-cell,
+.batch-cell.title {
+  font-size: 1rem !important;
+}
+.batch-wrapper *,
+.batch-table * {
+  box-sizing: border-box;
+}
+.info-and-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.left-info {
+  flex: 2;
+  min-width: 300px;
+}
+
+.right-downloads {
+  flex: 1;
+  min-width: 300px;
+}
+
+.letter-group {
+        margin-top: 40px;
+    }
+    .letter-group h2 {
+        background: #222;
+        color: white;
+        padding: 8px 12px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+    .anime-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+    .anime-list li {
+        padding: 6px 0;
+        border-bottom: 1px dashed #ccc;
+    }
+    .anime-list li a {
+        color: #00ccff;
+        text-decoration: none;
+    }
+    .anime-list li small {
+        color: #aaa;
+    }

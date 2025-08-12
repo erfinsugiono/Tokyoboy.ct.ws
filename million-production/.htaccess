@@ -1,0 +1,12 @@
+Options +Indexes
+
+# Make sure this directory uses its own index.php
+DirectoryIndex index.php
+
+
+
+# Optional: Disable global rewrites if needed
+RewriteEngine off
+php_value display_errors On
+
+

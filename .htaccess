@@ -1,0 +1,82 @@
+
+# Powered by Site.pro
+<IfModule pagespeed_module>
+	ModPagespeed off
+</IfModule>
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault A0
+	ExpiresByType image/gif A691200
+	ExpiresByType image/png A691200
+	ExpiresByType image/jpeg A691200
+	ExpiresByType text/css A691200
+	ExpiresByType text/javascript A691200
+	ExpiresByType application/javascript A691200
+	ExpiresByType font/otf A691200
+	ExpiresByType font/ttf A691200
+	ExpiresByType font/woff A691200
+	ExpiresByType font/woff2 A691200
+</IfModule>
+<FilesMatch "^(web.config)$">
+	<IfModule mod_authz_core.c>
+		Require all denied
+	</IfModule>
+	<IfModule !mod_authz_core.c>
+		Order allow,deny
+	</IfModule>
+</FilesMatch>
+<IfModule mod_negotiation.c>
+	#Options -MultiViews
+</IfModule>
+
+RewriteEngine On
+RewriteBase /
+
+# Rewrite /home to index.php
+RewriteRule ^home$ index.php [L]
+
+# Redirect /index.php to /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.php [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+
+
+
+# Exclude existing files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+
+
+
+# Secret admin panel access
+RewriteRule ^nonononono$ million-production/million-production.php [L]
+
+# Redirect direct access to secret URL
+RewriteCond %{THE_REQUEST} \s/million-production/million-production\.php [NC]
+RewriteRule ^million-production/million-production\.php$ /nonononono [R=301,L]
+
+# Deny direct access unless via secret URL
+RewriteCond %{REQUEST_URI} !^/nonononono$
+RewriteRule ^million-production/million-production\.php$ - [F,L]
+
+
+
+
+
+
+
+# Rewrite only if the request is not for an existing file or directory
+RewriteRule ^([a-zA-Z0-9_-]+)$ post.php?anime=$1 [L]
+RewriteCond %{THE_REQUEST} \s/post\.php\?anime=([^\s&]+) [NC]
+RewriteRule ^post\.php$ /%1? [R=301,L]
+
+
+DirectoryIndex index.php index.cgi index.html
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_URI} ^/(js/(main.js|bootstrap.min.js)|css/([0-9a-f]+.css|common.css|site.css|bootstrap.min.css)|sitemap.xml)$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ sitepro/$1 [L,QSA]
+
+
+#### PERSISTENT CONTENT ####
